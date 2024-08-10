@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .gallery {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 24px;
+        list-style: none;
+        padding: 0;
+        margin: 0 auto;
+        width: 1128px;
+      }
+      .gallery-item {
+        width: 360px;
+        height: 200px;
+        overflow: hidden;
+        transition: transform 250ms ease;
+      }
+      .gallery-image {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .gallery-item:hover {
+        transform: scale(1.05);
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <ul class="gallery"></ul>
+    </div>
+    <script type="module" src="./js/1-gallery.js"></script>
+  </body>
+</html>
