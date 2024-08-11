@@ -88,14 +88,8 @@ const createGalleryItems = images => {
 
 galleryList.innerHTML = createGalleryItems(images);
 
-// Инициализация SimpleLightbox после добавления элементов галереи
 const lightbox = new SimpleLightbox('.gallery a', {
   captionsData: 'alt',
   captionPosition: 'bottom',
   captionDelay: 250,
-});
-
-galleryList.addEventListener('click', event => {
-  event.preventDefault();
-  if (event.target.nodeName !== 'IMG') return;
 });
